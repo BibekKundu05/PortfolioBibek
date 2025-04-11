@@ -1,0 +1,181 @@
+.botx{
+    position: fixed;
+    z-index: 500;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: auto;
+    /* transition: all 0.3s var(--transition); */
+}
+
+.diva{
+    text-decoration: none;
+}
+.ps__thumb-y{
+    background-color: rgba(255, 255, 255, 0.425)!important;
+}
+.diva:hover .cs-message>.cs-message__content-wrapper>.cs-message__content{
+    transition: all 0.3s var(--transition);
+    background-color: #165740!important;
+}
+
+@media screen and (max-width: 400px){
+    .botx{
+        width: 87.5%;
+    }
+}
+.chatbot-icon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+}
+.chaticon{
+    font-size: 60px;
+    color: var(--primary-color);
+    transition: all 0.3s var(--transition);
+    margin-right: 20px;
+}
+.chaticon:hover{
+    cursor: pointer;
+    color: var(--title-color);
+    transition: all 0.3s var(--transition);
+    transform: scale(1.1);
+}
+.chatbot{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 1s;
+}
+.hide{
+    display: none;
+}
+.show{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.head{
+    width: 100%;
+    height: 40px;
+    /* background-color: #0A241F; */
+    background: linear-gradient(90deg, #0A241F, #0b2b25)!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    box-shadow: 0px 0px 25px 5px rgba(4, 4, 4, 0.35)!important;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.imgx{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin-right: 10px;
+}
+.content{
+    bottom:0;
+    right:0;
+}
+
+
+.close{
+    opacity: 0.7;
+    color: white!important;
+    padding-right: 10px;
+    font-size: var(--normal-font-size);
+    
+}
+.cs-main-container{
+    border: none!important;
+    background-color: #092620cb!important;
+    background: linear-gradient(137deg, #248a5233, #2572871e)!important;
+    backdrop-filter: blur(8px);
+    border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+    box-shadow: 0px 0px 25px 5px rgba(4, 4, 4, 0.35)!important;
+    
+}
+
+.cs-chat-container{
+    border: none!important;
+    background-color: transparent!important;
+    max-height: 500px!important;
+    /* height: auto; */
+}
+.cs-message-list{
+    border: none!important;
+    background-color: transparent!important;
+}
+.cs-button--attachment{
+    display: none!important;
+}
+.cs-message-input{
+    padding-bottom: 10px!important;
+    /* background-color: #0A241F!important; */
+    background: linear-gradient(145deg, #0A241F, #0b2b25)!important;
+    border-top: none!important;
+    padding-top: 8px!important;
+}
+.cs-message-input__content-editor-wrapper{
+    margin-left: 10px!important;
+    background-color: #ffffff11!important;
+    color:white!important;
+}
+.cs-message-input__content-editor-container{
+    background-color: transparent!important;
+    color:white!important;
+}
+.cs-message-input__content-editor{
+    background-color: transparent!important;
+    color:white!important;   
+}
+.cs-message-input__content-editor::before {
+    color: rgba(255, 255, 255, 0.425)!important; /* Replace "gray" with your desired color */
+  }
+  
+.cs-typing-indicator{
+    right: 0!important;
+}
+section[aria-label="ChatGPT: just now"] .cs-message__content {
+    background-color: #07221D!important;
+    color: rgb(185, 185, 185)!important;
+    transition: all 0.3s var(--transition);
+}
+.cs-button--send{
+    color:var(--primary-color)!important;
+}
+section[aria-label="ChatGPT"] .cs-message__content {
+    background-color:  #07221D!important;
+    color: rgb(185, 185, 185)!important;
+}
+
+section[aria-label="user"] .cs-message__content {
+    background-color: transparent!important;
+    background: linear-gradient(120deg, #1a623a, #165740);
+    color: rgb(185, 185, 185)!important;
+}
+
+.cs-typing-indicator__indicator{
+    padding-left: 5px!important;
+}
+.cs-typing-indicator{
+    background-color: rgba(245, 245, 245, 0.163)!important;
+    
+}
+
+.cs-typing-indicator__dot{
+    background-color: rgba(250, 235, 215, 0.529)!important;
+}
+
+.cs-typing-indicator__text{
+    color: rgba(250, 235, 215, 0.684)!important;
+}
