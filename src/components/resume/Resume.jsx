@@ -13,7 +13,7 @@ const Resume = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbx6XErvElNgQxwJi38hvTRPru6eww8ORKhesDZbUvCLvUZiJ9Yz1Ku_AkBhGxNaNfQF/exec");
+        const response = await fetch("https://script.google.com/macros/s/AKfycbyE1FckZSG2Op6tulWuHwzKniJVpXYkeXjBLq3PKS686vsjoeHStsfUMcrIv1LyGtRsOw/exec");
         const data = await response.json();
 
         if (Array.isArray(data.cv)) {

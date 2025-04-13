@@ -87,7 +87,6 @@ function App() {
               </div>
           )}
           <Header />
-          <Chatbot />
           <Home />
           {datax.services && <Services services={datax.services.filter(service => service.id !== "")} />}
           {datax.skills && <Skills skills={datax.skills.filter(skill=>skill.id!=="")}/>}

@@ -42,7 +42,7 @@
 }
 
 .home__title{
-    font-size: var(--biggest-font-size);
+    font-size: 5.2rem;
     text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px 0 rgb(0 0 0 / 20%);
     line-height: 1.2;
     margin-top: 15px;
@@ -153,7 +153,7 @@
 }
 
 .home__data .text-sm{
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.5em;
 }
 

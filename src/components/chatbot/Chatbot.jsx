@@ -20,7 +20,7 @@ const Chatbot = () => {
 
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm AI Version of Rohit Raj (Currently in Beta)! Ask me anything!",
+      message: "Hello, I'm AI Version of Bibek Kundu (Currently in Beta)! Ask me anything!",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -84,7 +84,7 @@ const Chatbot = () => {
 
     <div className={`chatbot ${isVisible?'show':''}`}>
       <div className="head">
-        <div className="title"><img src={img} className="imgx"></img><div className="namex">VIRTUAL ROHIT</div></div>
+        <div className="title"><img src={img} className="imgx"></img><div className="namex">VIRTUAL Bibek</div></div>
         <div className="close" onClick={()=>setIsVisible(!isVisible)}>x</div>
       </div>
       <MainContainer
@@ -99,7 +99,7 @@ const Chatbot = () => {
             scrollBehavior="smooth"
             typingIndicator={
               isTyping ? (
-                <TypingIndicator content="Virtual Rohit is typing"/>
+                <TypingIndicator content="Virtual Bibek is typing"/>
               ) : null
             }
           >
@@ -109,12 +109,12 @@ const Chatbot = () => {
                   {message.message.toLowerCase().includes('contact me')&&
                   <a href="#contact" className="diva">
                     <Message key={i} model={message}>
-                      {message.sender==='ChatGPT'&&<Avatar src={img} name="Rohit" style={{width: '5px', height:'10px'}}/>} 
+                      {message.sender==='ChatGPT'&&<Avatar src={img} name="Bibek" style={{width: '5px', height:'10px'}}/>} 
                     </Message>
                   </a>
                   }
                     <Message key={i} model={message}>
-                      {message.sender==='ChatGPT'&&<Avatar src={img} name="Rohit" style={{width: '5px', height:'10px'}}/>} 
+                      {message.sender==='ChatGPT'&&<Avatar src={img} name="Bibek" style={{width: '5px', height:'10px'}}/>} 
                     </Message>
               </>)
             })}
